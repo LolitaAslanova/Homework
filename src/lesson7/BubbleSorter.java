@@ -18,7 +18,7 @@ public class BubbleSorter {
     public static void sort(int[] array) {
         boolean chek = false;
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length - 1; j++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] < array[j + 1]) {
                     int tmp = array[j];
                     array[j] = array[j + 1];
@@ -26,7 +26,7 @@ public class BubbleSorter {
                     chek = true;
                 }
             }
-            if (chek == false) {
+            if (!chek) {
                 break;
             }
             chek = false;

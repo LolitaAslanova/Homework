@@ -1,4 +1,4 @@
-package lesson20.Horse;
+package lesson20.horse;
 
 public class Halter {
     private String type;

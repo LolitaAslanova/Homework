@@ -15,25 +15,20 @@ package lesson13;
  */
 
 public class ILoveJava {
-    public static String s1() {
-        return "I like Java!!!";
+    public static void exmp(String s1) {
+        System.out.println("Распечатать последний символ строки." + s1.charAt(s1.length() - 1));
+        System.out.println("Проверить, заканчивается ли ваша строка подстрокой “!!!”.");
+        System.out.println(s1.endsWith("!!!"));
+        System.out.println("Проверить, начинается ли ваша строка подстрокой “I like”.");
+        System.out.println(s1.startsWith("I like"));
+        System.out.println("Заменить все символы “а” на “о”: " + s1.replace('a', 'o'));
+        System.out.println("Преобразуйте строку к верхнему регистру: " + s1.toUpperCase());
+        System.out.println("Преобразуйте строку к нижнему регистру: " + s1.toLowerCase());
+        System.out.println("Вырезать строку Java: " + s1.substring(7, 11));
+        System.out.printf("I %s Java for %d years", "like", 5);
     }
 
     public static void main(String[] args) {
-        System.out.println("Распечатать последний символ строки.");
-        System.out.println(s1().charAt(s1().length() - 1));
-        System.out.println("Проверить, заканчивается ли ваша строка подстрокой “!!!”.");
-        System.out.println(s1().endsWith("!!!"));
-        System.out.println("Проверить, начинается ли ваша строка подстрокой “I like”.");
-        System.out.println(s1().startsWith("I like"));
-        System.out.println("Заменить все символы “а” на “о”.");
-        System.out.println(s1().replace('a', 'o'));
-        System.out.println("Преобразуйте строку к верхнему регистру.");
-        System.out.println(s1().toUpperCase());
-        System.out.println("Преобразуйте строку к нижнему регистру.");
-        System.out.println(s1().toLowerCase());
-        System.out.println("Вырезать строку Java: ");
-        System.out.println(s1().substring(7, 11));
-        System.out.printf("I %s Java for %d years", "like", 5);
+        exmp("I like Java!!!");
     }
 }

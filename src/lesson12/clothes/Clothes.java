@@ -15,7 +15,7 @@
  * Метод одетьЖенщину выводит на консоль всю информацию о женской одежде. То же самое для метода одетьМужчину.
  */
 
-package lesson12.Clothes;
+package lesson12.clothes;
 
 public class Clothes {
     public static void main(String[] args) {

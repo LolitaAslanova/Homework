@@ -12,10 +12,10 @@ public class AandB {
     public static void main(String[] args) {
         int a = 46;
         int b = 35;
-        RecurMethod(a, b);
+        recurMethod(a, b);
     }
 
-    public static void RecurMethod(int a, int b) {
+    public static void recurMethod(int a, int b) {
         System.out.println(a);
         if (a > b) {
             a--;
@@ -23,7 +23,7 @@ public class AandB {
             a++;
         }
         if (a != b) {
-            RecurMethod(a, b);
+            recurMethod(a, b);
         }
     }
 }

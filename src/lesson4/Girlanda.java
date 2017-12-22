@@ -23,14 +23,20 @@ public class Girlanda {
         op1 = ~i;
         op2 = i << 3;
         op3 = i >> 2;
-        op4 = i & i;
-        System.out.println("Операция тильда");
-        System.out.println(Integer.toBinaryString(op1));
-        System.out.println("Операция << ");
-        System.out.println(Integer.toBinaryString(op2));
-        System.out.println("Операция >> ");
-        System.out.println(Integer.toBinaryString(op3));
-        System.out.println("Операция & ");
-        System.out.println(Integer.toBinaryString(op4));
+        op4 = i & 1;
+        for(int x=0; x<5; x++) {
+            System.out.println("Операция тильда");
+            System.out.println(Integer.toBinaryString(op1));
+            op1= ~op1;
+            System.out.println("Операция << ");
+            System.out.println(Integer.toBinaryString(op2));
+            op2=op2<<3;
+            System.out.println("Операция >> ");
+            System.out.println(Integer.toBinaryString(op3));
+            op3 = op3 >> 2;
+            System.out.println("Операция & ");
+            System.out.println(Integer.toBinaryString(op4));
+            op4 = op4 & 1;
+        }
     }
 }

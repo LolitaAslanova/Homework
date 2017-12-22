@@ -1,8 +1,8 @@
 package lesson10.figure;
 
 public class Circle extends Shape {
-    double rad;
-    double cor;
+    public double rad;
+    public double cor;
 
     public Circle(double rad, double cor) {
         this.rad = rad;
@@ -10,11 +10,28 @@ public class Circle extends Shape {
     }
 
     public Circle(String color, double rad, double cor) {
+        this(rad, cor);
     }
 
     public double draw() {
         System.out.println("Рисуем круг. ");
         return rad * cor;
+    }
+
+    public double getRad() {
+        return rad;
+    }
+
+    public void setRad(double rad) {
+        this.rad = rad;
+    }
+
+    public double getCor() {
+        return cor;
+    }
+
+    public void setCor(double cor) {
+        this.cor = cor;
     }
 
     @Override

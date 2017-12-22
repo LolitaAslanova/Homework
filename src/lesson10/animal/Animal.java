@@ -10,6 +10,22 @@ abstract public class Animal {
     abstract public double eat();
     abstract public double sleep();
 
+    public String getFood() {
+        return food;
+    }
+
+    public void setFood(String food) {
+        this.food = food;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

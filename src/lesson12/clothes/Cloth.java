@@ -1,4 +1,4 @@
-package lesson12.Clothes;
+package lesson12.clothes;
 
 abstract class Cloth {
     int size;

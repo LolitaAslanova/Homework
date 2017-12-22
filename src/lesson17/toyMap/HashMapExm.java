@@ -1,17 +1,21 @@
-package lesson17.ToyMap;
+package lesson17.toyMap;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeMap;
 
 /**
- * Урок 17, задание 11
- * Переделать задание 8, используя TreeMap.
+ * Урок 17, задание 8
+ * Создайте HashMap, содержащий пары значений  - имя игрушки и объект игрушки (класс Toy).
+ * Перебрать и распечатать пары значений - entrySet().
+ * Перебрать и распечатать набор из имен игрушек  - keySet().
+ * Перебрать и распечатать значения игрушек - values().
+ * Для каждого перебора создать свой метод.
  */
 
-public class ToyTreeMap {
+public class HashMapExm {
     public static void main(String args[]) {
-        Map<String, Toy> map = new TreeMap<>();
+        Map<String, Toy> map = new HashMap<>();
         map.put("Doll", new Toy("Doll", 12));
         map.put("Box", new Toy("Box", 62));
         map.put("Car", new Toy("Car", 95));

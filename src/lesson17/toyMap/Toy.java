@@ -1,4 +1,4 @@
-package lesson17.ToyMap;
+package lesson17.toyMap;
 
 public class Toy {
     private String name;

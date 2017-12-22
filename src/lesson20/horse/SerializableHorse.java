@@ -1,4 +1,4 @@
-package lesson20.Horse;
+package lesson20.horse;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 
 /**
  * Урок 20, задание 1
- * Создайте метод, который сериализует класс Horse(наследник класса Animal)
+ * Создайте метод, который сериализует класс horse(наследник класса Animal)
  * в файл и метод, который десериализует его.
  */
 

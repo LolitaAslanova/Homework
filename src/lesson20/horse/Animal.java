@@ -1,4 +1,4 @@
-package lesson20.Horse;
+package lesson20.horse;
 
 import java.io.Serializable;
 

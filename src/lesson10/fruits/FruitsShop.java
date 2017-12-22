@@ -21,12 +21,12 @@ public class FruitsShop {
         fruit[2] = new Apricot(0.8, 18);
 
         for (Fruit f : fruit) {
-            f.printManufacturerInfo();
             f.getCost();
             f.getWeight();
             f.costOfFruit();
             System.out.println(" " + f);
             sum += (double) f.getCost();
+            f.printManufacturerInfo();
             System.out.println("Общая сумма: " + sum);
             System.out.println();
         }

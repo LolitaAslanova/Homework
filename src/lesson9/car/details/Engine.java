@@ -3,4 +3,46 @@ package lesson9.car.details;
 public class Engine {
     private int power;
     private String company;
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Engine engine = (Engine) o;
+
+        if (power != engine.power) return false;
+        return company != null ? company.equals(engine.company) : engine.company == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = power;
+        result = 31 * result + (company != null ? company.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "power=" + power +
+                ", company='" + company + '\'' +
+                '}';
+    }
 }

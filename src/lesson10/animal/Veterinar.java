@@ -1,10 +1,7 @@
 package lesson10.animal;
 
-/*public class Veterinar extends lesson10.animal{
-   public void treatAnimal(lesson10.animal lesson10.animal){
-        return food;
-        return location;
+public class Veterinar {
+    public void treatAnimal(Animal animal) {
+        System.out.println("Пришел на прием " + animal);
     }
-
 }
-*/

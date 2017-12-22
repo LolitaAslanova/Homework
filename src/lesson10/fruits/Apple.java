@@ -10,4 +10,12 @@ public class Apple extends Fruit {
     public Apple(double weight, double cost) {
         super(weight, cost);
     }
+
+    @Override
+    public String toString() {
+        return "Apple{" +
+                "weight=" + weight +
+                ", cost=" + cost +
+                "} " + super.toString();
+    }
 }
