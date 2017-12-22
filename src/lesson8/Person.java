@@ -46,16 +46,13 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "fullName='" + fullName + '\'' +
-                ", age=" + age +
-                '}';
+        return String.format("Person fullName %s, age %d", fullName, age);
     }
 
     public static void main(String[] args) {
-        Person Ira = new Person();
-        Person Kat = new Person("Ekaterina", 22);
-        System.out.println(Ira);
-        System.out.println(Kat);
+        Person ira = new Person();
+        Person kat = new Person("Ekaterina", 22);
+        System.out.println(ira);
+        System.out.println(kat);
     }
 }
